@@ -1,19 +1,11 @@
 import React from 'react'
-import GestureHandler from './screens/GestureHandler'
 import { createStaticNavigation } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
+import GestureHandler from './screens/GestureHandler'
 import HomeScreen from './screens/HomeScreen'
-
-export const PADDING = 10
-export const MARGIN = 5
-export const RADIUS = 5
-export const TEXT_SIZE = 18
-
-export type RootStackParamList = {
-    Home: undefined;
-    GestureHandler: undefined;
-}
+import { RootStackParamList } from './Utils'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 const RootStack = createNativeStackNavigator<RootStackParamList>({
     initialRouteName: 'Home',
@@ -29,7 +21,9 @@ const RootStack = createNativeStackNavigator<RootStackParamList>({
 const Navigation = createStaticNavigation(RootStack)
 
 function App(): React.JSX.Element {
-    return <Navigation />
+    return <GestureHandlerRootView>
+        <Navigation />
+    </GestureHandlerRootView>
 }
 
 export default App

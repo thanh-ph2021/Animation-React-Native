@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { NavigationProp } from '@react-navigation/native'
 
-import { PADDING, RADIUS, RootStackParamList, TEXT_SIZE } from '../App'
+import { PADDING, RADIUS, RootStackParamList, TEXT_SIZE } from '../Utils'
 
 function HomeScreen() {
 
