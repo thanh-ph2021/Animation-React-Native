@@ -6,12 +6,16 @@ import GestureHandler from './screens/GestureHandler'
 import HomeScreen from './screens/HomeScreen'
 import { RootStackParamList } from './Utils'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import GestureHandler1 from './screens/GestureHandler1'
+import GallaryView from './screens/GallaryView'
 
 const RootStack = createNativeStackNavigator<RootStackParamList>({
     initialRouteName: 'Home',
     screens: {
         Home: HomeScreen,
-        GestureHandler: GestureHandler
+        GestureHandler: GestureHandler,
+        GestureHandler1: GestureHandler1,
+        GallaryView: GallaryView
     },
     screenOptions: {
         headerShown: false

@@ -8,10 +8,20 @@ import { PADDING, RADIUS, RootStackParamList, TEXT_SIZE } from '../Utils'
 function HomeScreen() {
 
     const navigation = useNavigation<NavigationProp<RootStackParamList>>()
-    const dataScreen = [{
-        title: 'Gesture Handler',
-        onPress: () => navigation.navigate('GestureHandler')
-    }]
+    const dataScreen = [
+        {
+            title: 'Gesture Handler',
+            onPress: () => navigation.navigate('GestureHandler')
+        },
+        {
+            title: 'Gesture Handler1',
+            onPress: () => navigation.navigate('GestureHandler1')
+        },
+        {
+            title: 'GallaryView',
+            onPress: () => navigation.navigate('GallaryView')
+        },
+    ]
 
     return (
         <View style={{}}>
@@ -41,7 +51,8 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     listContainer: {
-        paddingHorizontal: PADDING
+        paddingHorizontal: PADDING,
+        rowGap: 5
     },
     item: {
         backgroundColor: '#03a5fc',
