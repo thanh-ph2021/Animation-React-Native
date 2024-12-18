@@ -1,13 +1,10 @@
 import React from 'react'
 import { createStaticNavigation } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-
-import GestureHandler from './screens/GestureHandler'
-import HomeScreen from './screens/HomeScreen'
-import { RootStackParamList } from './Utils'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
-import GestureHandler1 from './screens/GestureHandler1'
-import GallaryView from './screens/GallaryView'
+
+import { RootStackParamList } from './Utils'
+import { ScrollFlatList, HomeScreen, GestureHandler1, GallaryView, GestureHandler, ScrollFlatList1 } from './screens'
 
 const RootStack = createNativeStackNavigator<RootStackParamList>({
     initialRouteName: 'Home',
@@ -15,7 +12,9 @@ const RootStack = createNativeStackNavigator<RootStackParamList>({
         Home: HomeScreen,
         GestureHandler: GestureHandler,
         GestureHandler1: GestureHandler1,
-        GallaryView: GallaryView
+        GallaryView: GallaryView,
+        ScrollFlatList: ScrollFlatList,
+        ScrollFlatList1: ScrollFlatList1,
     },
     screenOptions: {
         headerShown: false

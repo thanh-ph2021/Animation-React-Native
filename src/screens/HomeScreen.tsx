@@ -14,12 +14,20 @@ function HomeScreen() {
             onPress: () => navigation.navigate('GestureHandler')
         },
         {
-            title: 'Gesture Handler1',
+            title: 'Gesture Handler 1',
             onPress: () => navigation.navigate('GestureHandler1')
         },
         {
-            title: 'GallaryView',
+            title: 'Gallary View',
             onPress: () => navigation.navigate('GallaryView')
+        },
+        {
+            title: 'Scroll FlatList',
+            onPress: () => navigation.navigate('ScrollFlatList')
+        },
+        {
+            title: 'Scroll FlatList 1',
+            onPress: () => navigation.navigate('ScrollFlatList1')
         },
     ]
 

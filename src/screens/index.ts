@@ -1,1 +1,6 @@
 export { default as HomeScreen } from './HomeScreen'
+export { default as ScrollFlatList } from './ScrollFlatList'
+export { default as ScrollFlatList1 } from './ScrollFlatList1'
+export { default as GallaryView } from './GallaryView'
+export { default as GestureHandler } from './GestureHandler'
+export { default as GestureHandler1 } from './GestureHandler1'
